@@ -69,7 +69,7 @@
                 data-description="{{ $plugin->description }}"
                 data-status="{{ $plugin->status ? 'activated' : 'not-activated' }}">
                 <x-core::card class="h-100">
-                    <div class="position-relative border-bottom"
+                    <div class="position-relative border-bottom"                  
                         @style(['background-color: #efefef; padding:10px;'])>
 
                         <x-core::card.title class="text-truncate mb-2" title="{{ $plugin->name }}">
@@ -106,7 +106,8 @@
                                 </x-core::button>
                             @endif
 
-                            @if (auth()->user()->hasPermission('plugins.remove'))
+
+                            @if (auth()->user()->hasPermission('plugins.remove') && !$plugin->status)
                                 <x-core::button type="button" class="btn-trigger-remove-plugin" data-plugin="{{ $plugin->path }}"
                                     :data-url="route('plugins.remove', ['plugin' => $plugin->path])">
                                     {{ trans('packages/plugin-management::plugin.remove') }}
