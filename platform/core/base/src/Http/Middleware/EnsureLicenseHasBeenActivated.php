@@ -24,16 +24,6 @@ class EnsureLicenseHasBeenActivated
             return $next($request);
         }
 
-        $whitelistRoutes = [
-            'unlicensed',
-            'unlicensed.skip',
-            'settings.license.activate',
-        ];
-
-        if (! $request->routeIs($whitelistRoutes)) {
-            return redirect()->route('unlicensed', ['redirect_url' => $request->fullUrl()]);
-        }
-
         return $next($request);
     }
 }
