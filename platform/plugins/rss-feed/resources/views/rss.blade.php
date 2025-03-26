@@ -8,7 +8,7 @@
     <channel>
         <atom:link
             type="application/rss+xml"
-            href="{{url($meta['link'])}}"
+            href="{{ url($meta['link']) }}"
             rel="self"
         />
         <title>{!! Botble\RssFeed\Helpers\Cdata::out($meta['title']) !!}</title>
