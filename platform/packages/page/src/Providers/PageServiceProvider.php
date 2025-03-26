@@ -14,6 +14,12 @@ use Botble\Theme\Events\RenderingAdminBar;
 use Botble\Theme\Facades\AdminBar;
 use Illuminate\Support\Facades\View as ViewFacade;
 
+use Botble\SeoHelper\Contracts\SeoMetaContract;
+use Botble\SeoHelper\SeoMeta;
+use Botble\SeoHelper\Contracts\SeoHelperContract;
+use Botble\SeoHelper\SeoHelper;
+
+
 /**
  * @since 02/07/2016 09:50 AM
  */
@@ -23,6 +29,8 @@ class PageServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
+        $this->app->bind(SeoMetaContract::class, SeoMeta::class);
+        $this->app->bind(SeoHelperContract::class, SeoHelper::class);
         $this->app->bind(PageInterface::class, function () {
             return new PageRepository(new Page());
         });
