@@ -43,13 +43,7 @@
     @yield('head')
 
     <script>
-        window.siteUrl = "{{ url('') }}";
-
-        @if (Auth::check())
-            window.siteEditorLocale = "{{ apply_filters('cms_site_editor_locale', App::getLocale()) }}";
-            window.siteAuthorizedUrl = "{{ rescue(fn() => route('settings.license.verify.index')) }}";
-            window.isAuthenticated = {{ Auth::check() ? 'true' : 'false' }};
-        @endif
+        window.siteUrl = "{{ url('') }}";        
     </script>
 
     {{ $header ?? null }}

@@ -18,30 +18,7 @@ class MembershipAuthorization
 
     public function authorize(): bool
     {
-        try {
-            if (! filter_var($this->url, FILTER_VALIDATE_URL)) {
-                return false;
-            }
-
-            if ($this->isInvalidDomain()) {
-                return false;
-            }
-
-            $authorizeDate = setting('membership_authorization_at');
-
-            if (! $authorizeDate) {
-                return $this->processAuthorize();
-            }
-
-            $authorizeDate = Carbon::createFromFormat('Y-m-d H:i:s', $authorizeDate);
-            if (Carbon::now()->diffInDays($authorizeDate) > 7) {
-                return $this->processAuthorize();
-            }
-
-            return true;
-        } catch (Throwable) {
-            return false;
-        }
+        return true;
     }
 
     protected function isInvalidDomain(): bool
@@ -71,25 +48,6 @@ class MembershipAuthorization
 
     protected function processAuthorize(): bool
     {
-        try {
-            $response = Http::withoutVerifying()
-                ->asJson()
-                ->acceptJson()
-                ->post('https://botble.com/membership/authorize', [
-                    'website' => $this->url,
-                ]);
-
-            if (! $response->ok()) {
-                return true;
-            }
-
-            setting()
-                ->set('membership_authorization_at', Carbon::now()->toDateTimeString())
-                ->save();
-
-            return true;
-        } catch (Throwable) {
-            return true;
-        }
+        return true;
     }
 }
