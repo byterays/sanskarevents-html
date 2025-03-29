@@ -58,3 +58,4 @@ storage/framework/maintenance.php
 *.zip
 *.bak
 *.rar
+/html/

@@ -1,0 +1,10 @@
+{
+    "id": "botble/{-theme}",
+    "name": "Sanskar",
+    "namespace": "Theme\\Sanskar\\",
+    "author": null,
+    "url": null,
+    "version": "1.0.0",
+    "description": "Website design by Byterays Technology",
+    "required_plugins": []
+}
