@@ -1,0 +1,64 @@
+{
+  "id": "himachal",
+  "destination_name": "Himachal Pradesh",
+  "slug": "destination-wedding-himachal-pradesh",
+  "page_title": "Himachal Pradesh: Dreamy Mountain Weddings in Nature’s Lap",
+  "content_title": "Dreamy Mountain Weddings in Nature’s Lap",
+  "excerpt": "Host your wedding amidst snow-capped peaks, pine forests, and fairy-tale settings in Himachal Pradesh.",
+  "main_content": "Looking for a destination wedding that feels like a scene from a romantic movie? Himachal Pradesh offers breathtaking scenery, cool mountain air, and picturesque landscapes perfect for a dreamy hill-station wedding.\n\nFrom apple orchards in Shimla to riverside resorts in Kasauli, every location in Himachal offers an unmatched blend of charm, culture, and tranquility. Perfect for couples looking for peace, privacy, and alpine beauty.\n\nOur team can plan a wedding across Himachal’s most scenic locations, whether you're imagining a snow-covered vow ceremony or a floral celebration in a lush green valley.",
+  "featured_image": "images/destinations/himachal-pradesh-1.jpg",
+  "location": {
+    "state": "Himachal Pradesh",
+    "country": "India"
+  },
+  "best_time_to_wed": "March to June, September to December",
+  "popularity_score": 9.2,
+  "contents": [
+    {
+      "title": "What We Offer as Your Destination Wedding Planner in Himachal",
+      "content": "<ul><li>Venue selection in Shimla, Manali, Dalhousie, and more</li><li>Snow & nature-themed wedding setups</li><li>Mountain logistics & local vendor coordination</li><li>Photography in scenic outdoor locations</li><li>Bonfire nights, folk music & mehndi in the mountains</li></ul>",
+      "image": "destinations/himachal_services.jpg"
+    },
+    {
+      "title": "Celebrate Love in the Hills",
+      "content": "Whether it’s a summer garden wedding or a winter snowfairy ceremony, Himachal makes your wedding unforgettable.",
+      "image": ""
+    }
+  ],
+  "qna": {
+    "qna_title": "Why Choose Himachal Pradesh for Your Destination Wedding?",
+    "qna_items": [
+      {
+        "question": "Scenic Mountain Backdrops",
+        "answer": "Get married surrounded by snow peaks, pine trees, and fresh mountain air."
+      },
+      {
+        "question": "Romantic Weather",
+        "answer": "Cool, breezy weather makes every ceremony feel refreshing and cozy."
+      },
+      {
+        "question": "Flexible Locations",
+        "answer": "Choose from hillsides, valleys, forests, and riversides across Himachal."
+      },
+      {
+        "question": "Local Culture & Cuisine",
+        "answer": "Delight guests with pahadi hospitality and authentic Himachali dishes."
+      },
+      {
+        "question": "Adventure & Relaxation",
+        "answer": "Enjoy nature walks, river rafting, or hot springs post-wedding."
+      }
+    ]
+  },
+  "search-tags": [
+    "Himachal destination wedding",
+    "hill station wedding India",
+    "mountain wedding venues India",
+    "snow wedding Himachal",
+    "pahadi wedding ideas",
+    "nature wedding Himachal Pradesh",
+    "eco weddings in India",
+    "alpine wedding destination India",
+    "Shimla Manali wedding planners"
+  ]
+}

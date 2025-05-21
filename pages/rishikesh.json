@@ -1,0 +1,64 @@
+{
+  "id": "rishikesh",
+  "destination_name": "Rishikesh",
+  "slug": "destination-wedding-rishikesh",
+  "page_title": "Rishikesh: A Spiritual & Serene Destination Wedding Haven",
+  "content_title": "A Spiritual & Serene Destination Wedding Haven",
+  "excerpt": "Tie the knot on the banks of the Ganga with the Himalayas as your witness—Rishikesh is a dream for spiritual destination weddings.",
+  "main_content": "Rishikesh, nestled in the foothills of the Himalayas and situated on the banks of the sacred Ganges, is the perfect spiritual and serene destination for a soulful wedding. Known for its calming ambiance and yogic energy, this tranquil town offers an unforgettable blend of tradition and peace.\n\nFrom riverside mandaps to ashram-style venues and boutique resorts, Rishikesh is ideal for couples looking for a spiritual, intimate, and eco-conscious wedding. The gentle chants, soft river breeze, and natural Himalayan beauty create a magical aura like no other.\n\nPerfect for couples who believe in simplicity, nature, and spiritual bonding, Rishikesh promises a sacred beginning to your lifelong journey together.",
+  "featured_image": "images/destinations/rishikesh.jpg",
+  "location": {
+    "state": "Uttarakhand",
+    "country": "India"
+  },
+  "best_time_to_wed": "October to April",
+  "popularity_score": 8.9,
+  "contents": [
+    {
+      "title": "What We Offer as Your Destination Wedding Planner in Rishikesh",
+      "content": "<ul><li>Riverbank venue setups</li><li>Eco-friendly wedding planning</li><li>Traditional Vedic rituals</li><li>Spiritual-themed decor & music</li><li>Logistics, stay & guest experiences</li><li>Photography and pre-wedding shoot support</li></ul>",
+      "image": "destinations/rishikesh_services.jpg"
+    },
+    {
+      "title": "Marry in the Lap of Spiritual Bliss",
+      "content": "Whether you're looking for a soulful Ganga aarti wedding or a peaceful mountain vow ceremony, Rishikesh is where your sacred journey begins.",
+      "image": ""
+    }
+  ],
+  "qna": {
+    "qna_title": "Why Choose Rishikesh for Your Destination Wedding?",
+    "qna_items": [
+      {
+        "question": "Spiritual Ambiance",
+        "answer": "Known as the yoga capital of the world, Rishikesh offers peace and spiritual depth to your celebrations."
+      },
+      {
+        "question": "Riverfront Locations",
+        "answer": "Get married by the Ganga with stunning views and spiritual vibes all around."
+      },
+      {
+        "question": "Eco-Friendly Experience",
+        "answer": "Choose from sustainable venues and services for an eco-conscious celebration."
+      },
+      {
+        "question": "Adventure Meets Peace",
+        "answer": "Balance rituals with rafting, nature treks, and meditation sessions for your guests."
+      },
+      {
+        "question": "Compact & Connected",
+        "answer": "Easy road access from Delhi and Dehradun makes Rishikesh both accessible and serene."
+      }
+    ]
+  },
+  "search-tags": [
+    "Rishikesh destination wedding",
+    "spiritual wedding in India",
+    "wedding on Ganga ghat",
+    "eco-friendly wedding venues India",
+    "ashram wedding India",
+    "riverfront wedding destinations",
+    "yoga themed wedding",
+    "intimate wedding in Rishikesh",
+    "nature wedding near Himalayas"
+  ]
+}

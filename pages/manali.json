@@ -1,0 +1,64 @@
+{
+  "id": "manali",
+  "destination_name": "Manali",
+  "slug": "destination-wedding-manali",
+  "page_title": "Manali: The Dreamy Snowy Escape for Destination Weddings",
+  "content_title": "The Dreamy Snowy Escape for Destination Weddings",
+  "excerpt": "Manali brings snow-capped peaks, apple orchards, and cozy vibes to your destination wedding—perfect for couples who love the mountains.",
+  "main_content": "Set against the majestic Himalayas, Manali is a magical wedding destination that brings together snow, serenity, and romance. Ideal for couples who love adventure and nature, Manali offers luxury resorts, riverside venues, and panoramic mountain views that make every wedding feel like a fairytale.\n\nWhether you're planning a snowy winter wedding or a springtime celebration amidst blooming apple orchards, Manali delivers a unique blend of thrill and tranquility. The crisp air, scenic backdrops, and charming local culture enhance the wedding experience for both the couple and the guests.\n\nPerfect for adventurous couples or those simply in love with the mountains, Manali offers more than just a venue—it offers an experience.",
+  "featured_image": "images/destinations/manali.jpg",
+  "location": {
+    "state": "Himachal Pradesh",
+    "country": "India"
+  },
+  "best_time_to_wed": "April to June, December to February (for snow)",
+  "popularity_score": 9.5,
+  "contents": [
+    {
+      "title": "What We Offer as Your Destination Wedding Planner in Manali",
+      "content": "<ul><li>Luxury mountain resorts and riverside venues</li><li>Snow-themed wedding décor and setups</li><li>Guest logistics and adventure activities</li><li>Pre-wedding shoots in Solang Valley & Hadimba Temple</li><li>Warm bonfire parties and cultural folk shows</li></ul>",
+      "image": "destinations/manali_services.jpg"
+    },
+    {
+      "title": "Your Winter Wedding Wonderland Awaits",
+      "content": "Let your love story unfold in the snowy peaks of Manali, with warmth, charm, and breathtaking beauty all around.",
+      "image": ""
+    }
+  ],
+  "qna": {
+    "qna_title": "Why Choose Manali for Your Destination Wedding?",
+    "qna_items": [
+      {
+        "question": "Stunning Snowy Views",
+        "answer": "Manali offers gorgeous backdrops of snow-capped peaks and river valleys."
+      },
+      {
+        "question": "Charming Weather",
+        "answer": "Cool summers and snowy winters make it a year-round favorite."
+      },
+      {
+        "question": "Romantic & Adventurous",
+        "answer": "Couples can explore Solang Valley, go paragliding, or relax in hot springs."
+      },
+      {
+        "question": "Perfect Photo Opportunities",
+        "answer": "From snowy backdrops to cozy bonfires—every moment is picture-perfect."
+      },
+      {
+        "question": "Ideal for Cozy Celebrations",
+        "answer": "Smaller gatherings feel warm, special, and stress-free in Manali’s cozy spaces."
+      }
+    ]
+  },
+  "search-tags": [
+    "Manali destination wedding",
+    "snow wedding in India",
+    "mountain wedding Himachal",
+    "romantic hill station wedding",
+    "winter wedding venues India",
+    "Manali wedding packages",
+    "adventure wedding destinations",
+    "bonfire wedding celebration",
+    "Solang Valley wedding shoot"
+  ]
+}

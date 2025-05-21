@@ -1,10 +1,11 @@
-RewriteEngine on
+RewriteEngine On
 
-# Redirect Trailing Slashes If Not A Folder...
+# Handle /destination/slug pattern and route to destination.php?place=slug
+RewriteRule ^destination/([^/]+)/?$ destination.php?place=$1 [QSA,L]
+
+# Ensure requests are not directories or actual files
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} (.+)/$
-RewriteRule ^ %1 [L,R=301]
+RewriteCond %{REQUEST_FILENAME} !-f
 
-RewriteCond %{REQUEST_URI} !^public
-
-RewriteRule ^(.*)$ public/$1 [L]
+# Append .php extension to requests
+RewriteRule ^(.+)$ $1.php [L]

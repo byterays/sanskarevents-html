@@ -1,0 +1,278 @@
+/* Template Color Default #563c47 = rgba(225, 148, 248, */
+
+/* TEXT COLOR */
+.yuuk_countdown_time ul li span,
+.yuuk_countdown_time ul li.blank,
+.yuuk_countdown_time ul li i,
+.photostack nav span::after,
+.upcoming-wedding-event .clock.flip-clock-wrapper ul li a div div.inn,
+nav.navbar.bootsnav.menu-style1 ul.dropdown-menu.megamenu-content .title,
+nav.navbar.bootsnav ul.nav li a.active,
+nav.navbar.bootsnav ul.nav li a:hover,
+nav.navbar.bootsnav ul.nav li a:focus,
+.pagination>li>a,
+.fancybox-gallery-slider .owl-prev,
+.fancybox-gallery-slider .owl-next,
+.even-slider .owl-prev,
+.even-slider .owl-next,
+.team-icon a,
+.twitter.style2 ul li a,
+.text-thm2 {
+  color: #563c47 !important;
+}
+
+/* TEXT HOVER COLOR */
+.ulockd-media-box .media:hover .media-heading,
+.ulockd-sitemap > li a:hover,
+.ulockd-shop-item:hover h3,
+.service-col:hover .srvc-details h3,
+.about-box:hover .ab-details h3,
+.fservice-box:hover h3,
+.ulockd-bp-btn:hover,
+.ulockd-bp-details.style2:hover .ulockd-bp-title h3 {
+	color: #563c47 !important;
+}
+nav.navbar.bootsnav.light-red ul.nav > li > a.active,
+nav.navbar.bootsnav.light-red ul.nav > li > a:hover,
+nav.navbar.bootsnav.light-red li.dropdown ul.dropdown-menu > li > a:hover {
+	color: #563c47;
+}
+
+/* BACKGROUND COLOR */
+.icon-font-thm li,
+.gallery_thirteen a,
+#graph-wrapper > button,
+nav.navbar.bootsnav.ulockd-menu-style-two li.dropdown ul.dropdown-menu,
+.attr-nav > ul > li > a span.badge,
+.ulockd-home-two,
+.about-icon,
+.about-icon2,
+.srvc-icon,
+.ulockd-ffact-two .ulockd-icon-let,
+.ulockd-copy-right,
+.ulockd-l2-copy-right,
+.price-tag,
+.ulocked-pricing-tag,
+.contact-details .contact-place > li,
+.ulockd-product-details a.btn.hvr-bounce-to-right:before,
+.ulockd-all-service a.active,
+nav.navbar.bootsnav.ulockd-menu-style-two #navbar-menu,
+.navbar-sticky.navbar-scrollspy.ulockd-menu-style-two,
+.ulockd-faq-content .panel-default > .panel-heading,
+.amount-box input[type="radio"]:checked+label,
+.pagination>.active>a,
+.ulockd-bgthm {
+	background-color: #563c47 !important;
+}
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all, 
+.ui-timepicker-list .ui-timepicker-selected:hover, 
+.ui-timepicker-list li:hover, 
+li.ui-timepicker-selected {
+	background-color: #563c47;
+}
+
+/* HOVER BACKGROUND COLOR */
+.main_story_tmln:before,
+.main_story_tmln .st2_timeline .st2_content:before,
+.main_story_tmln .circle:before,
+.main_story_tmln .icon:before,
+.team_two .ttwo_thumb:after,
+.pricing_table2:hover .pt2_header > .pt2_price_value,
+.feature-box:hover .overlay .icon:before,
+.social-linked a:hover,
+.social-linked-two a:hover,
+.icon_box:hover .icon i,
+.form-group.ulockd-contact-btn:hover button,
+.ulockd-tag-list-details a:hover,
+.ficon-box:hover .ficon,
+.ulockd-tag-list-details li:hover a,
+.fancybox-gallery-slider .owl-prev:hover, 
+.fancybox-gallery-slider .owl-next:hover,
+.team-icon a:hover,
+.footer-font-icon a:hover,
+.mt-separator:after,
+.title-bottom:before {
+	background-color: #563c47 !important;
+}
+.main-slider2 .owl-next:hover,
+.main-slider2 .owl-prev:hover,
+.blog-post-img-slider .owl-prev:hover,
+.blog-post-img-slider .owl-next:hover,
+.ulockd-bpost-slider .owl-controls .owl-prev:hover,
+.ulockd-bpost-slider .owl-controls .owl-next:hover {
+	background-color: #563c47;
+}
+.masonry-filter a.active,
+.masonry-filter a:active,
+.masonry-filter a:hover,
+.masonry-filter a:focus {
+	background-color: #563c47;
+}
+
+/* BACKGROUND COLOR TRANSPARENT */
+.ulockd-ap-service-two::before,
+.ulockd-coming-soon::before,
+.ulockd-uconctruction::before {
+	background-color: rgba(225, 148, 248, .98);
+}
+.overlay-tc95:before {
+	background-color: rgba(225, 148, 248, .95);
+}
+.image-box .cb-overlay,
+.feature-box .overlay,
+.shop-box .overlay,
+.ulockd-frst-divider::before,
+.gallery-thumb .layer,
+.gallery-thumb-l2 .layer,
+.testimonial-grid .video-btn a,
+.overlay-tc9:before {
+	background-color: rgba(225, 148, 248, 0.9);
+}
+.overlay-tc85:before {
+	background-color: rgba(225, 148, 248, .85);
+}
+.overlay-tc8:before {
+	background-color: rgba(225, 148, 248, .8);
+}
+.gallery-thumb .overlayer,
+.overlay-tc75:before {
+	background-color: rgba(225, 148, 248, .75);
+}
+.flickr-widget li .thumb .overlay,
+.overlay-tc7:before {
+	background-color: rgba(225, 148, 248, .7);
+}
+.overlay-tc65:before {
+	background-color: rgba(225, 148, 248, .65);
+}
+.gallery-overlay,
+.team-overlay,
+.overlay-tc6:before {
+	background-color: rgba(225, 148, 248, .6);
+}
+.overlay-tc55:before {
+	background-color: rgba(225, 148, 248, .55);
+}
+.overlay-tc5:before {
+	background-color: rgba(225, 148, 248, .5);
+}
+
+/* BUTTON TEMPALTE COLOR */
+.ulockd-btn-thm2 {
+  background-color: #563c47;
+  border-color: #563c47;
+}
+.ulockd-btn-styledark:hover,
+.ulockd-btn-styledark:active,
+.ulockd-btn-styledark:focus {
+  background-color: #563c47;
+}
+.ulockd-btn-yellow:hover,
+.ulockd-btn-yellow:active,
+.ulockd-btn-yellow:focus {
+  background-color: #563c47;
+}
+.ulockd-btn-white:hover,
+.ulockd-btn-white:active,
+.ulockd-btn-white:focus {
+  background-color: #563c47 !important;
+  border-color: #563c47 !important;
+}
+.ulockd-btn-gray:hover,
+.ulockd-btn-gray:active,
+.ulockd-btn-gray:focus {
+  background-color: #563c47 !important;
+  border-color: #563c47 !important;
+}
+.ulockd-btn-transparent:hover,
+.ulockd-btn-transparent:active,
+.ulockd-btn-transparent:focus {
+  background-color: #563c47 !important;
+  border-color: #563c47 !important;
+}
+/* BORDER TEMPALTE COLOR */
+.icon_box .icon i,
+.ulockd-bdr-thm {
+	border: 1px solid #563c47;
+}
+.yuuk_countdown_time ul li i,
+.ulockd-bdr2-thm {
+	border: 2px solid #563c47;
+}
+.ulockd-bdr3-thm {
+	border: 3px solid #563c47;
+}
+.main_story_tmln .icon,
+.main_story_tmln .st2_timeline:first-child:before,
+.main_story_tmln .st2_timeline:last-child:before,
+.ulockd-bdr4-thm {
+	border: 4px solid #563c47;
+}
+.ulockd-bdr5-thm {
+	border: 5px solid #563c47;
+}
+.ulockd-bdr6-thm {
+	border: 6px solid #563c47;
+}
+.ulockd-bdr7-thm {
+	border: 7px solid #563c47;
+}
+.event-box2 .thumb,
+.main_story_tmln .circle,
+.ulockd-bdr8-thm {
+	border: 8px solid #563c47;
+}
+.ulockd-bdr9-thm {
+	border: 9px solid #563c47;
+}
+.ulockd-bdr10-thm {
+	border: 10px solid #563c47;
+}
+nav.navbar li.dropdown ul.dropdown-menu {
+	border-top: 5px solid #563c47
+}
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li > a,
+.ulockd-bb-solid-thm {
+    border-bottom: 1px solid #563c47;
+}
+.ulockd-bt-solid-thm {
+    border-top: 1px solid #563c47;
+}
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu,
+#custom_carousel .controls li.active {
+    border-top: 3px solid #563c47;
+}
+.ulockd-bb-dotted {
+	border-bottom: 1px dotted #563c47;
+}
+.mt-separator,
+.ulockd-bb2-dashed {
+	border-bottom: 2px dashed #563c47;
+}
+.mt-separator,
+.ulockd-bb2-dashed {
+	border-bottom: 2px dashed #563c47;
+}
+.ulockd-bb-dashed {
+	border-bottom: 1px dashed #563c47;
+}
+.ulockd-bb2-dashed {
+    border: 2px dashed #563c47;
+}
+.pagination>.active>a,
+.amount-box input[type="radio"]:checked+label,
+.ulockd-all-service a.active {
+	border-color:  #563c47;
+}
+/* Hover Border COlor */
+.team-icon a:hover,
+.team-details .team-icon a,
+.icon_box:hover .icon i {
+    border: 1px solid #563c47;
+}
+.divider-box-tringle::before {
+	border-top: 255px solid #563c47;
+}
+.divider-box-tringle::after {
+	border-bottom: 255px solid #563c47;
+}

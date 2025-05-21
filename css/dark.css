@@ -1,0 +1,172 @@
+/* Initialize Variables */
+/* Lavender Project Color */
+body {
+  background-color: #111111;
+  color: #ffffff; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #eeeeee !important; }
+  h1 small,
+  h1 .small, h2 small,
+  h2 .small, h3 small,
+  h3 .small, h4 small,
+  h4 .small, h5 small,
+  h5 .small, h6 small,
+  h6 .small,
+  .h1 small,
+  .h1 .small, .h2 small,
+  .h2 .small, .h3 small,
+  .h3 .small, .h4 small,
+  .h4 .small, .h5 small,
+  .h5 .small, .h6 small,
+  .h6 .small {
+    font-weight: normal;
+    line-height: 1;
+    color: #eeeeee !important; }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+  .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {
+    color: #eeeeee !important; }
+
+a {
+  color: #eeeeee !important; }
+
+.dropdown-content {
+  background-color: gray; }
+
+.ulockd-ffact-one {
+  background-color: #555555; }
+
+.ulockd-service-three,
+.header-middle,
+.our-shop,
+.ulockd-testimonial,
+.ulockd-blog {
+  background-color: transparent !important; }
+
+.header-nav.transparent .navbar-default.navbar-fixed,
+.header-nav .main-header-nav.navbar-scrolltofixed {
+  background-color: #111111; }
+
+.ulockd-ffact-one {
+  border: 1px solid #bbbbbb; }
+
+.ulockd-ffact-one p {
+  color: #ffffff !important; }
+
+nav.navbar.bootsnav.menu-style1 ul.nav li a.active,
+nav.navbar.bootsnav.menu-style1 ul.nav li a:hover,
+nav.navbar.bootsnav.menu-style1 ul.nav li a:focus,
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu li a:hover,
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu li a:focus {
+  color: #ffffff !important; }
+
+nav.navbar.bootsnav ul.nav li a.active,
+nav.navbar.bootsnav ul.nav li a:hover,
+nav.navbar.bootsnav ul.nav li a:focus {
+  color: #bbbbbb !important; }
+
+.fixedup .navbar-scrolltofixed.scroll-to-fixed-fixed,
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  background-color: #111111; }
+
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
+  background-color: #111111; }
+
+nav.navbar.bootsnav.menu-style1 ul.nav li a {
+  color: #bbbbbb !important; }
+
+nav.singlepage-dark,
+.multipage-dark {
+  background-color: #111111 !important; }
+
+.ulockd-partner-thumb {
+  background-color: #bbbbbb !important; }
+
+form.ulockd-login-form, form.ulockd-reg-form {
+  background-color: gray; }
+
+@media only screen and (max-width: 992px) {
+  .ulockd-main-logo2 > img {
+    margin-top: 10px; }
+
+  .bgc-rdark {
+    background-color: #111111 !important; } }
+@media only screen and (max-width: 992px) {
+  nav.menu-style1,
+  nav.navbar.bootsnav .navbar-toggle {
+    background-color: transparent !important; } }
+.rsvp_form3 label {
+  color: #ffffff !important; }
+
+.about-details p {
+  color: gray; }
+
+.service_box2,
+.coming_soon_grid,
+.event-box .details,
+.event-box2 .details,
+.event-box3 .details,
+.timeline li .timeline-panel,
+.event-box,
+.team-one,
+.blog-post,
+.modal-content {
+  background-color: #555555 !important; }
+
+.photostack-flip .photostack-title {
+  color: #111111 !important; }
+
+.center_top_spacing {
+  background-color: #111111 !important; }
+
+.about-box2 {
+  background-color: rgba(0, 0, 0, 0.6) !important; }
+
+.color-black33 {
+  color: #ffffff !important; }
+
+form.appointment_form,
+.footer-fst-col p,
+.twitter.style2 ul li,
+.ftr-phone,
+.ftr-fax,
+.ftr-mail,
+.footer-contact p {
+  color: gray; }
+
+.blog_post_three .details {
+  background-color: rgba(85, 85, 85, 0.85); }
+
+.bgc-overlay-white5::before {
+  background-color: rgba(0, 0, 0, 0.5) !important; }
+
+.bgc-overlay-white55::before {
+  background-color: rgba(0, 0, 0, 0.55) !important; }
+
+.bgc-overlay-white6::before {
+  background-color: rgba(0, 0, 0, 0.6) !important; }
+
+.bgc-overlay-white65::before {
+  background-color: rgba(0, 0, 0, 0.65) !important; }
+
+.bgc-overlay-white7::before {
+  background-color: rgba(0, 0, 0, 0.7) !important; }
+
+.bgc-overlay-white75::before {
+  background-color: rgba(0, 0, 0, 0.75) !important; }
+
+.bgc-overlay-white8::before {
+  background-color: rgba(0, 0, 0, 0.8) !important; }
+
+.bgc-overlay-white85::before {
+  background-color: rgba(0, 0, 0, 0.85) !important; }
+
+.bgc-overlay-white9::before {
+  background-color: rgba(0, 0, 0, 0.9) !important; }
+
+.bgc-overlay-white95::before {
+  background-color: rgba(0, 0, 0, 0.95) !important; }
+
+/*# sourceMappingURL=dark.css.map */

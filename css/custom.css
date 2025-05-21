@@ -1,0 +1,44 @@
+.icon-font-thm li, .gallery_thirteen a, #graph-wrapper > button, nav.navbar.bootsnav.ulockd-menu-style-two li.dropdown ul.dropdown-menu, .attr-nav > ul > li > a span.badge, .ulockd-home-two, .about-icon, .about-icon2, .srvc-icon, .ulockd-ffact-two .ulockd-icon-let, .ulockd-copy-right, .ulockd-l2-copy-right, .price-tag, .ulocked-pricing-tag, .contact-details .contact-place > li, .ulockd-product-details a.btn.hvr-bounce-to-right:before, .ulockd-all-service a.active, nav.navbar.bootsnav.ulockd-menu-style-two #navbar-menu, .navbar-sticky.navbar-scrollspy.ulockd-menu-style-two, .ulockd-faq-content .panel-default > .panel-heading, .amount-box input[type="radio"]:checked+label, .pagination>.active>a, .ulockd-bgthm {
+    background-color: #874756ab !important;
+}
+
+.px-0{
+    padding-left:0px!important;
+    padding-right:0px!important;
+}
+
+.ulockd-main-logo2 img {
+    margin-top: unset !important;
+    height: 70px;
+}
+
+.header-nav,
+.header-nav .main-header-nav.navbar-scrolltofixed,
+.navbar-collapse {
+    background-color: #563c47 !important;
+}
+
+nav.navbar.bootsnav ul.nav li a.active, nav.navbar.bootsnav ul.nav li a:hover, nav.navbar.bootsnav ul.nav li a:focus {
+    color: #fff !important;
+}
+
+nav.navbar.bootsnav ul.nav>li>a {
+    color: #aaa !important;
+}
+
+section {
+    padding: 30px 0;
+}
+
+.attr-nav ul li a {
+    color: #fff;
+}
+
+.center_top_spacing {
+    padding-top: 40px;
+}
+
+p {
+    font-size: 20px;   
+    font-weight: 400;
+}

@@ -1,0 +1,64 @@
+{
+    "id": "jaipur",
+    "destination_name": "Jaipur",
+    "slug": "destination-wedding-jaipur",
+    "page_title": "Jaipur: The Royal Destination Wedding Capital of India",
+    "content_title": "The Royal Destination Wedding Capital of India",
+    "excerpt": "Celebrate your love story with a regal touch in Jaipur, the Pink City—India’s most iconic royal wedding destination.",
+    "main_content": "Step into a world of royalty and elegance with a destination wedding in Jaipur. Known as the Pink City, Jaipur offers a timeless charm with its palaces, forts, and luxurious heritage hotels that make every wedding a regal affair. Whether it’s the grandeur of City Palace or the majestic backdrop of Nahargarh Fort, Jaipur ensures a wedding that’s nothing short of a royal fantasy.\n\nFrom elephant processions to traditional Rajasthani folk performances, every element in Jaipur adds a rich cultural touch to your wedding. The city is also known for its seamless hospitality and lavish venues like Rambagh Palace and Samode Haveli.\n\nWith its excellent connectivity to major cities and availability of premium wedding services, Jaipur remains the top choice for couples looking to celebrate in regal splendor. Say “I do” in a palace where kings once lived and create royal memories for a lifetime.",
+    "featured_image": "images/destinations/jaipur.jpg",
+    "location": {
+      "state": "Rajasthan",
+      "country": "India"
+    },
+    "best_time_to_wed": "October to March",
+    "popularity_score": 9.7,
+    "contents": [
+      {
+        "title": "What We Offer as Your Destination Wedding Planner in Jaipur",
+        "content": "<ul><li>Venue booking in heritage palaces & luxury resorts</li><li>Royal-themed decor and entertainment</li><li>Traditional Rajasthani hospitality & cuisine</li><li>Logistics & guest coordination</li><li>Choreographed processions and folk music</li><li>Luxury bridal entries and groom welcome</li></ul>",
+        "image": "destinations/jaipur_services.jpg"
+      },
+      {
+        "title": "Live Your Royal Wedding Dream",
+        "content": "Our experienced planners bring your royal vision to life, with every detail crafted to perfection in the majestic charm of Jaipur.",
+        "image": ""
+      }
+    ],
+    "qna": {
+      "qna_title": "Why Choose Jaipur for Your Destination Wedding?",
+      "qna_items": [
+        {
+          "question": "Palatial Venues",
+          "answer": "Jaipur is home to India’s most iconic palaces and forts, perfect for a royal wedding experience."
+        },
+        {
+          "question": "Rich Cultural Heritage",
+          "answer": "Traditional music, folk dancers, and regal themes enhance the cultural flavor of your wedding."
+        },
+        {
+          "question": "Heritage Meets Luxury",
+          "answer": "From age-old royal hospitality to modern five-star services—Jaipur offers the best of both worlds."
+        },
+        {
+          "question": "Royal Hospitality",
+          "answer": "Expect nothing less than grand welcomes, royal cuisine, and unforgettable guest experiences."
+        },
+        {
+          "question": "Great Accessibility",
+          "answer": "With a major airport and well-connected roads, Jaipur is easily accessible from any part of India."
+        }
+      ]
+    },
+    "search-tags": [
+      "Jaipur destination wedding",
+      "royal wedding in Rajasthan",
+      "heritage wedding venues Jaipur",
+      "luxury wedding planners Jaipur",
+      "palace wedding in Jaipur",
+      "traditional Indian wedding",
+      "pink city weddings",
+      "Jaipur palace wedding packages",
+      "wedding in Rambagh Palace"
+    ]
+  }
