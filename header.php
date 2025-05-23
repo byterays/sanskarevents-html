@@ -12,13 +12,13 @@
 	<meta name="web-designer" content="Byterays Technology">
 	<!-- css file -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/all-plugins.css?t=<?= $t ?>">
-	<link rel="stylesheet" href="css/bootsnav.css?t=<?= $t ?>">
+	<link rel="stylesheet" href="css/all-plugins.css">
+	<link rel="stylesheet" href="css/bootsnav.css">
 	<link rel="stylesheet" href="css/theme-color.css">
-	<link rel="stylesheet" href="css/style.css?t=<?= $t ?>">
-	<link rel="stylesheet" href="css/custom.css?t=<?= $t ?>">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/custom.css">
 	<!-- Responsive stylesheet -->
-	<link rel="stylesheet" href="css/responsive.css?t=<?= $t ?>">
+	<link rel="stylesheet" href="css/responsive.css">
 	<!-- Title -->
 	<title>Sanskar Events & Celebrations - Wedding & Event Planner for all kind of Celebrations </title>
 	<!-- Favicon -->

@@ -1,12 +1,14 @@
 <?php
-require '../vendor/autoload.php'; // Make sure PHPMailer is installed via Composer
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+// Autoload PHPMailer (assuming vendors is in wwwroot)
+require_once __DIR__ . '/../vendor/autoload.php';
 
+// Load mail config from config/mail.php
+$config = require __DIR__ . '/../config/mail.php';
 
-// Validate honeypot
+// Basic spam check: honeypot
 if (!empty($_POST['form_botcheck'])) {
     exit('Bot Detected!');
 }
@@ -17,12 +19,12 @@ $phone   = htmlspecialchars(trim($_POST['form_phone'] ?? ''));
 $email   = filter_var(trim($_POST['form_email'] ?? ''), FILTER_VALIDATE_EMAIL);
 $message = htmlspecialchars(trim($_POST['form_message'] ?? ''));
 
-// Validate required fields
+// Required fields
 if (empty($name) || empty($phone)) {
     exit('Name and phone are required.');
 }
 
-// Build email body
+// Prepare email body
 $emailBody = "
   <h2>New Contact Request</h2>
   <p><strong>Name:</strong> $name</p>
@@ -31,27 +33,19 @@ $emailBody = "
   <p><strong>Message:</strong><br>$message</p>
 ";
 
-// SMTP settings
-$smtpHost = 'smtp.yourdomain.com';
-$smtpUser = 'your-email@yourdomain.com';
-$smtpPass = 'your-app-password';
-$smtpPort = 587;
-$adminEmail = 'admin@yourdomain.com';
-$adminName  = 'Site Admin';
-
+// Send to Admin
 try {
     $mail = new PHPMailer(true);
     $mail->isSMTP();
-    $mail->Host       = $smtpHost;
+    $mail->Host       = $config['smtp_host'];
     $mail->SMTPAuth   = true;
-    $mail->Username   = $smtpUser;
-    $mail->Password   = $smtpPass;
+    $mail->Username   = $config['smtp_user'];
+    $mail->Password   = $config['smtp_pass'];
     $mail->SMTPSecure = 'tls';
-    $mail->Port       = $smtpPort;
+    $mail->Port       = $config['smtp_port'];
 
-    $mail->setFrom($smtpUser, 'Website Contact Form');
-    $mail->addAddress($adminEmail, $adminName);
-
+    $mail->setFrom($config['from_email'], $config['from_name']);
+    $mail->addAddress($config['admin_email'], $config['admin_name']);
     if ($email) {
         $mail->addReplyTo($email, $name);
     }
@@ -60,34 +54,46 @@ try {
     $mail->Subject = 'New Contact Form Submission';
     $mail->Body    = $emailBody;
     $mail->AltBody = strip_tags($emailBody);
-    $mail->addCustomHeader('X-Mailer', 'PHP/' . phpversion());
     $mail->addCustomHeader('X-Originating-IP', $_SERVER['REMOTE_ADDR']);
 
-    $mail->send();
+    try{
+        $mail->send();
+    } catch (Exception $e) {
+        echo 'Mailer Error: ' . $mail->ErrorInfo;
+        exit;
+    }   
+ 
 
-    // Send confirmation email to sender if email provided
+    // Confirmation email to user
     if ($email) {
         $confirm = new PHPMailer(true);
         $confirm->isSMTP();
-        $confirm->Host       = $smtpHost;
+        $confirm->Host       = $config['smtp_host'];
         $confirm->SMTPAuth   = true;
-        $confirm->Username   = $smtpUser;
-        $confirm->Password   = $smtpPass;
+        $confirm->Username   = $config['smtp_user'];
+        $confirm->Password   = $config['smtp_pass'];
         $confirm->SMTPSecure = 'tls';
-        $confirm->Port       = $smtpPort;
+        $confirm->Port       = $config['smtp_port'];
 
-        $confirm->setFrom($smtpUser, 'Your Company Name');
+        $confirm->setFrom($config['from_email'], $config['from_name']);
         $confirm->addAddress($email, $name);
+
         $confirm->isHTML(true);
         $confirm->Subject = 'Thank you for contacting us';
         $confirm->Body    = "
-          <p>Hi $name,</p>
-          <p>Thank you for reaching out. We have received your message and will get back to you shortly.</p>
-          <p><strong>Your Message:</strong><br>" . nl2br($message) . "</p>
-          <br><p>Regards,<br>Your Company Team</p>";
+            <p>Hi $name,</p>
+            <p>Thank you for reaching out. We received your message and will get back to you shortly.</p>
+            <p><strong>Your Message:</strong><br>" . nl2br($message) . "</p>
+            <p>Best regards,<br>Your Team</p>
+        ";
         $confirm->AltBody = strip_tags($message);
 
-        $confirm->send();
+        try{
+            $confirm->send();
+        } catch (Exception $e) {
+            echo 'Mailer Error: ' . $confirm->ErrorInfo;
+            exit;
+        }
     }
 
     echo 'Message sent successfully.';

@@ -1241,13 +1241,13 @@
     $(document).on('ready', function() {
         // add your functions
         preloaderLoad();
-        navbarScrollfixed();
+        //navbarScrollfixed();
         scrollToTop();
-        wowAnimation();
-        flip_Clock();
+        //wowAnimation();
+        //flip_Clock();
         //twitterFeed();
-        barFill();
-        mhome_slider();
+        //barFill();
+        //mhome_slider();
         //instagram_feed();
     });
     

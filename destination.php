@@ -153,5 +153,5 @@
 </section>
 
 
-<?php $place = $_GET['place'] ?? ''; ?>
+
 <?php include 'footer.php'; ?>
