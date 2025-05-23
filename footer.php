@@ -17,7 +17,11 @@
             <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-3">
                 <div class="footer-twitter">
                     <h3 class="text-uppercase text-thm2">Sanskar on Soical Media</h3>
-                    <div class="fb-page" data-href="https://www.facebook.com/sankareventsandcelebrations" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/sankareventsandcelebrations" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/sankareventsandcelebrations">Sanskar Events &amp; Celebrations</a></blockquote></div>
+                    <div class="fb-page" data-href="https://www.facebook.com/sankareventsandcelebrations"
+                        data-tabs="timeline" data-width="" data-height="" data-small-header="false"
+                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        
+                    </div>
 
                 </div>
             </div>
@@ -52,8 +56,7 @@
             <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-3">
                 <div class="footer-qlink mb35-smd">
                     <h3 class="text-uppercase text-thm2">Quick Contact</h3>
-                    <form id="contact_form5" name="contact_form5" class="contact-form"  method="post"
-                        novalidate="novalidate">
+                    <form id="contact_form5" name="contact_form5" class="contact-form" method="post" novalidate="novalidate">
                         <div class="messages"></div>
                         <div class="row">
                             <div class="col-md-12">
@@ -69,8 +72,8 @@
                                 <div class="form-group">
                                     <input id="form_phone" name="form_phone"
                                         class="form-control form_control ulockd-form-fg required phone"
-                                        placeholder="Your Phone Number" required="required" data-error="Phone is required."
-                                        type="phone">
+                                        placeholder="Your Phone Number" required="required"
+                                        data-error="Phone is required." type="phone">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
@@ -84,13 +87,13 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <textarea id="form_message" name="form_message"
-                                        class="form-control ulockd-form-tb" rows="6" placeholder="Your message"></textarea>
+                                    <textarea id="form_message" name="form_message" class="form-control ulockd-form-tb"
+                                        rows="6" placeholder="Your message"></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group ulockd-contact-btn">
                                     <input type="text" name="form_botcheck" id="form_botcheck" style="display: none;">
-                                    <button type="submit" class="btn btn-default btn-block ulockd-btn-thm2"
+                                    <button type="submit" id="contact_form5_submit" class="btn btn-default btn-block ulockd-btn-thm2"
                                         data-loading-text="Getting Few Sec...">SUBMIT</button>
                                 </div>
                             </div>
@@ -124,12 +127,10 @@
 <a class="scrollToHome ulockd-bgthm" href="#"><i class="fa fa-home"></i></a>
 </div>
 
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v22.0&appId=946257136654856"></script>
-
 <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/bootsnav.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
 <script type="text/javascript" src="js/parallax.js"></script>
 <script type="text/javascript" src="js/slider.js"></script>
 <script type="text/javascript" src="js/scrollto.js"></script>
@@ -184,8 +185,11 @@
             }
         });
 
-       $('#contact_form5').submit(function (e) {
+       
+        $('#contact_form5').submit(function (e) {
+
             e.preventDefault();
+
             var form = $(this);
             var formData = form.serialize();
 
@@ -194,8 +198,8 @@
                 type: 'POST',
                 data: formData,
                 success: function (response) {
-                    $('.messages').html('<div style="color:green;">' + response + '</div>');
-                    form.trigger("reset");
+                    $('.messages').html('<div style="color:green;">' + response.message + '</div>');
+                    //form.trigger("reset");
                 },
                 error: function () {
                     $('.messages').html('<div style="color:red;">An error occurred.</div>');

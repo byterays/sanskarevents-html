@@ -34,6 +34,10 @@
 </head>
 
 <body>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v22.0&appId=946257136654856"></script>
+
+	
 	<div class="wrapper">
 		<div class="preloader">
 			<div class="preloader_container">
@@ -101,7 +105,7 @@
 							<div class="collapse navbar-collapse" id="navbar-menu">
 								<ul class="nav navbar-nav navbar-center ulockd-pad9100 pl130-md">
 									<li>
-										<a href="index">Home</a>
+										<a href="/">Home</a>
 									</li>
 									<li>
 										<a href="about">About</a>

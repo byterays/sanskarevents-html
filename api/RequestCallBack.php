@@ -14,9 +14,9 @@ if (!empty($_POST['form_botcheck'])) {
 }
 
 // Sanitize input
-$name    = htmlspecialchars(trim($_POST['form_name'] ?? ''));
-$phone   = htmlspecialchars(trim($_POST['form_phone'] ?? ''));
-$email   = filter_var(trim($_POST['form_email'] ?? ''), FILTER_VALIDATE_EMAIL);
+$name = htmlspecialchars(trim($_POST['form_name'] ?? ''));
+$phone = htmlspecialchars(trim($_POST['form_phone'] ?? ''));
+$email = filter_var(trim($_POST['form_email'] ?? ''), FILTER_VALIDATE_EMAIL);
 $message = htmlspecialchars(trim($_POST['form_message'] ?? ''));
 
 // Required fields
@@ -37,12 +37,12 @@ $emailBody = "
 try {
     $mail = new PHPMailer(true);
     $mail->isSMTP();
-    $mail->Host       = $config['smtp_host'];
-    $mail->SMTPAuth   = true;
-    $mail->Username   = $config['smtp_user'];
-    $mail->Password   = $config['smtp_pass'];
+    $mail->Host = $config['smtp_host'];
+    $mail->SMTPAuth = true;
+    $mail->Username = $config['smtp_user'];
+    $mail->Password = $config['smtp_pass'];
     $mail->SMTPSecure = 'tls';
-    $mail->Port       = $config['smtp_port'];
+    $mail->Port = $config['smtp_port'];
 
     $mail->setFrom($config['from_email'], $config['from_name']);
     $mail->addAddress($config['admin_email'], $config['admin_name']);
@@ -52,51 +52,62 @@ try {
 
     $mail->isHTML(true);
     $mail->Subject = 'New Contact Form Submission';
-    $mail->Body    = $emailBody;
+    $mail->Body = $emailBody;
     $mail->AltBody = strip_tags($emailBody);
     $mail->addCustomHeader('X-Originating-IP', $_SERVER['REMOTE_ADDR']);
 
-    try{
+    try {
         $mail->send();
     } catch (Exception $e) {
-        echo 'Mailer Error: ' . $mail->ErrorInfo;
+        echo json_encode([
+            'success' => true,
+            'message' => $mail->ErrorInfo
+        ]);
         exit;
-    }   
- 
+    }
 
     // Confirmation email to user
     if ($email) {
         $confirm = new PHPMailer(true);
         $confirm->isSMTP();
-        $confirm->Host       = $config['smtp_host'];
-        $confirm->SMTPAuth   = true;
-        $confirm->Username   = $config['smtp_user'];
-        $confirm->Password   = $config['smtp_pass'];
+        $confirm->Host = $config['smtp_host'];
+        $confirm->SMTPAuth = true;
+        $confirm->Username = $config['smtp_user'];
+        $confirm->Password = $config['smtp_pass'];
         $confirm->SMTPSecure = 'tls';
-        $confirm->Port       = $config['smtp_port'];
+        $confirm->Port = $config['smtp_port'];
 
         $confirm->setFrom($config['from_email'], $config['from_name']);
         $confirm->addAddress($email, $name);
 
         $confirm->isHTML(true);
         $confirm->Subject = 'Thank you for contacting us';
-        $confirm->Body    = "
+        $confirm->Body = "
             <p>Hi $name,</p>
             <p>Thank you for reaching out. We received your message and will get back to you shortly.</p>
             <p><strong>Your Message:</strong><br>" . nl2br($message) . "</p>
-            <p>Best regards,<br>Your Team</p>
-        ";
+            <p>Best regards,<br>Your Team</p>";
         $confirm->AltBody = strip_tags($message);
 
-        try{
+        try {
             $confirm->send();
         } catch (Exception $e) {
-            echo 'Mailer Error: ' . $confirm->ErrorInfo;
+            echo json_encode([
+                'success' => true,
+                'message' => $confirm->ErrorInfo
+            ]);
             exit;
         }
     }
+    echo json_encode([
+        'success' => true,
+        'message' => 'Message sent successfully.'
+    ]);
 
-    echo 'Message sent successfully.';
 } catch (Exception $e) {
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
+     echo json_encode([
+        'success' => true,
+        'message' => $mail->ErrorInfo
+    ]);
+    
 }

@@ -1157,18 +1157,18 @@
     }
 
     /* ----- Google Map Settings ----- */
-    // if($('#map-location').length){
-    //     var map;
-    //     map = new GMaps({
-    //         url: '../images/resource/flake.png',
-    //         el: '#map-location',
-    //         zoom: 17,
-    //         scrollwheel:false,
-    //         //Set Latitude and Longitude Here
-    //         lat: 40.712850,
-    //         lng: -74.006465
-    //     });
-    // }
+    if($('#map-location').length){
+        var map;
+        map = new GMaps({
+            url: '../images/resource/flake.png',
+            el: '#map-location',
+            zoom: 17,
+            scrollwheel:false,
+            //Set Latitude and Longitude Here
+            lat: 40.712850,
+            lng: -74.006465
+        });
+    }
 
     /* ----- FLICEKR FEED ----- */
     // if($('.flickr-photo').length){
@@ -1241,13 +1241,13 @@
     $(document).on('ready', function() {
         // add your functions
         preloaderLoad();
-        //navbarScrollfixed();
+        navbarScrollfixed();
         scrollToTop();
-        //wowAnimation();
+        wowAnimation();
         //flip_Clock();
         //twitterFeed();
         //barFill();
-        //mhome_slider();
+        mhome_slider();
         //instagram_feed();
     });
     
