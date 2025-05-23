@@ -20,7 +20,7 @@
                     <div class="fb-page" data-href="https://www.facebook.com/sankareventsandcelebrations"
                         data-tabs="timeline" data-width="" data-height="" data-small-header="false"
                         data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                        
+
                     </div>
 
                 </div>
@@ -56,7 +56,8 @@
             <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-3">
                 <div class="footer-qlink mb35-smd">
                     <h3 class="text-uppercase text-thm2">Quick Contact</h3>
-                    <form id="contact_form5" name="contact_form5" class="contact-form" method="post" novalidate="novalidate">
+                    <form id="contact_form5" name="contact_form5" class="contact-form" method="post"
+                        novalidate="novalidate">
                         <div class="messages"></div>
                         <div class="row">
                             <div class="col-md-12">
@@ -93,7 +94,8 @@
                                 </div>
                                 <div class="form-group ulockd-contact-btn">
                                     <input type="text" name="form_botcheck" id="form_botcheck" style="display: none;">
-                                    <button type="submit" id="contact_form5_submit" class="btn btn-default btn-block ulockd-btn-thm2"
+                                    <button type="submit" id="contact_form5_submit"
+                                        class="btn btn-default btn-block ulockd-btn-thm2"
                                         data-loading-text="Getting Few Sec...">SUBMIT</button>
                                 </div>
                             </div>
@@ -185,7 +187,7 @@
             }
         });
 
-       
+
         $('#contact_form5').submit(function (e) {
 
             e.preventDefault();
@@ -197,6 +199,7 @@
                 url: 'api/RequestCallBack',
                 type: 'POST',
                 data: formData,
+                dataType: 'json', // Expecting JSON response
                 success: function (response) {
                     $('.messages').html('<div style="color:green;">' + response.message + '</div>');
                     //form.trigger("reset");

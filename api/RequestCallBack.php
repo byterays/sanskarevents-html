@@ -10,7 +10,11 @@ $config = require __DIR__ . '/../config/mail.php';
 
 // Basic spam check: honeypot
 if (!empty($_POST['form_botcheck'])) {
-    exit('Bot Detected!');
+     echo json_encode([
+        'success' => false,
+        'message' => 'Bot Detected!'
+    ]);
+    exit;
 }
 
 // Sanitize input
@@ -21,7 +25,11 @@ $message = htmlspecialchars(trim($_POST['form_message'] ?? ''));
 
 // Required fields
 if (empty($name) || empty($phone)) {
-    exit('Name and phone are required.');
+    echo json_encode([
+        'success' => true,
+        'message' => 'Name and phone are required.'
+    ]);
+    exit;
 }
 
 // Prepare email body
@@ -60,7 +68,7 @@ try {
         $mail->send();
     } catch (Exception $e) {
         echo json_encode([
-            'success' => true,
+            'success' => false,
             'message' => $mail->ErrorInfo
         ]);
         exit;
@@ -93,7 +101,7 @@ try {
             $confirm->send();
         } catch (Exception $e) {
             echo json_encode([
-                'success' => true,
+                'success' => false,
                 'message' => $confirm->ErrorInfo
             ]);
             exit;
@@ -105,9 +113,9 @@ try {
     ]);
 
 } catch (Exception $e) {
-     echo json_encode([
-        'success' => true,
+    echo json_encode([
+        'success' => false,
         'message' => $mail->ErrorInfo
     ]);
-    
+
 }
