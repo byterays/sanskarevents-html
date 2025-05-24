@@ -43,14 +43,14 @@ $emailBody = "
 ";
 
 // Send to Admin
-try {
+
     $mail = new PHPMailer(true);
     $mail->isSMTP();
     $mail->Host = $config['smtp_host'];
     $mail->SMTPAuth = true;
     $mail->Username = $config['smtp_user'];
     $mail->Password = $config['smtp_pass'];
-    $mail->SMTPSecure = 'tls';
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Use SSL for port 465
     $mail->Port = $config['smtp_port'];
 
     $mail->setFrom($config['from_email'], $config['from_name']);
@@ -75,48 +75,11 @@ try {
         exit;
     }
 
-    // Confirmation email to user
-    if ($email) {
-        $confirm = new PHPMailer(true);
-        $confirm->isSMTP();
-        $confirm->Host = $config['smtp_host'];
-        $confirm->SMTPAuth = true;
-        $confirm->Username = $config['smtp_user'];
-        $confirm->Password = $config['smtp_pass'];
-        $confirm->SMTPSecure = 'tls';
-        $confirm->Port = $config['smtp_port'];
-
-        $confirm->setFrom($config['from_email'], $config['from_name']);
-        $confirm->addAddress($email, $name);
-
-        $confirm->isHTML(true);
-        $confirm->Subject = 'Thank you for contacting us';
-        $confirm->Body = "
-            <p>Hi $name,</p>
-            <p>Thank you for reaching out. We received your message and will get back to you shortly.</p>
-            <p><strong>Your Message:</strong><br>" . nl2br($message) . "</p>
-            <p>Best regards,<br>Your Team</p>";
-        $confirm->AltBody = strip_tags($message);
-
-        try {
-            $confirm->send();
-        } catch (Exception $e) {
-            echo json_encode([
-                'success' => false,
-                'message' => $confirm->ErrorInfo
-            ]);
-            exit;
-        }
-    }
     echo json_encode([
         'success' => true,
         'message' => 'Message sent successfully.'
     ]);
+    
 
-} catch (Exception $e) {
-    echo json_encode([
-        'success' => false,
-        'message' => $mail->ErrorInfo
-    ]);
-
-}
+    exit;
+?>
