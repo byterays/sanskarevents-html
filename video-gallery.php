@@ -1,8 +1,7 @@
 <?php include 'header.php'; ?>
 
-<?php 
-$videos = ['Q9lDN-SeNt', 'k3RGyGTlzOs', 'udEH-nEhCdU', 'sKIiZOMV6PA','sUqi5RzibDA','sUqi5RzibDA'];
-
+<?php
+	$videos = ['Q9lDN-SeNt', 'k3RGyGTlzOs', 'udEH-nEhCdU', 'sKIiZOMV6PA', 'sUqi5RzibDA', 'sUqi5RzibDA'];
 ?>
 <!-- Wrapper Start -->
 <!-- Our Gallery -->
@@ -34,18 +33,18 @@ $videos = ['Q9lDN-SeNt', 'k3RGyGTlzOs', 'udEH-nEhCdU', 'sKIiZOMV6PA','sUqi5RzibD
 				<div id="grid" class="masonry-gallery video-gallery grid-3 mrgn10 clearfix">
 
 					<!-- Masonry Item -->
-					 <?php foreach ($videos as $video): ?>
-					<div class="isotope-item creative corporate">
-						<div class="ulockd-about-video mrgn10 ulockd-mrgn1225">
-							<div class="ulockd-avdo-thumb">
-								<iframe class="h250" src="http://www.youtube.com/embed/<?php echo $video; ?>?autoplay=0"
-									allowfullscreen=""></iframe>
+					<?php foreach ($videos as $video): ?>
+						<div class="isotope-item creative corporate">
+							<div class="ulockd-about-video mrgn10 ulockd-mrgn1225">
+								<div class="ulockd-avdo-thumb">
+									<iframe class="h250" src="http://www.youtube.com/embed/<?php echo $video; ?>?autoplay=0"
+										allowfullscreen=""></iframe>
+								</div>
 							</div>
-						</div>
-						<!-- <div class="details text-center">
+							<!-- <div class="details text-center">
 							<h5>Gallery Title Here</h5>							
 						</div> -->
-					</div>
+						</div>
 					<?php endforeach; ?>
 
 				</div>
