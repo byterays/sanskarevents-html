@@ -18,9 +18,12 @@
                 <div class="footer-twitter">
                     <h3 class="text-uppercase text-thm2">Sanskar on Soical Media</h3>
                     <div class="fb-page" data-href="https://www.facebook.com/sankareventsandcelebrations"
-                        data-tabs="timeline" data-width="" data-height="" data-small-header="false"
-                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-
+                        data-tabs="timeline,messages" data-width="" data-height="" data-small-header="true"
+                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+                        <blockquote cite="https://www.facebook.com/sankareventsandcelebrations"
+                            class="fb-xfbml-parse-ignore"><a
+                                href="https://www.facebook.com/sankareventsandcelebrations">Sanskar Events &amp;
+                                Celebrations</a></blockquote>
                     </div>
 
                 </div>
@@ -48,10 +51,10 @@
                     </ul>
                 </div>
                 <p class="lead"><i class="fa fa-map-marker text-thm2"></i> Locate Us On Map.</p>
-                <!-- <iframe class="h150"
+                <iframe class="h150"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.8189098796183!2d77.42481437455614!3d28.60520898532262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef1341438e9d%3A0x5f7dd3497a8f0d0a!2sGaur%20City%20Center!5e0!3m2!1sen!2sin!4v1742648668386!5m2!1sen!2sin"
                     frameborder="0" scrolling="no"><a href="https://www.maps.ie/create-google-map/">Create
-                        Google Map</a></iframe> -->
+                        Google Map</a></iframe>
             </div>
             <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-3">
                 <div class="footer-qlink mb35-smd">
@@ -145,75 +148,28 @@
 
 <!-- Custom script for all pages -->
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/destinations-loader.js"></script>
+<script type="text/javascript" src="js/contact-form-handler.js"></script>
 <script type="text/javascript">
     $(function () {
-
-        const slug = <?= json_encode($place) ?>; // Safely injected from PHP
-        if (!slug) return $('#json-output').text('No destination provided.');
-
-        const jsonUrl = 'pages/' + slug + '.json'; // Adjust if needed
-
-        $('body').readJsonFromUrl({
-            url: jsonUrl,
-            onSuccess: function (data) {
-                console.log("Fetched Data:", data, data['search-tags']);
-
-                $(".content-title").text(data['page_title'] + ": " + data['content_title']);
-                $("#featured-image").attr("src", data['featured_image']);
-                $("#featured-image").attr("alt", data['page_title']);
-
-                $(".main-content").text(data['main_content']);
-
-                //faq
-                $("#faq-title").text(data['qna']['qna_title']);
-
-                if (data.qna) {
-                    JsonReader.renderQnaAccordion(data.qna, 'accordion');
-                }
-
-                var tags = data['search-tags'];
-                var tagsList = tags.map(tag => `<li><a href="destination/${slug}">${tag}</a></li>`).join('');
-                $(".ulockd-tag-list-details").empty().html(tagsList);
-            },
-            onError: function (err) {
-                console.error("Fetch Error:", err);
-            }
+        // Initialize the contact form handler
+        new ContactFormHandler({
+            form: '#contact_form5',
+            subject: 'Query from Quick Contact Form',
+            url: 'api/RequestCallBack'
         });
 
-        $('.destinations-list a').each(function () {
-            var href = $(this).attr('href');
-            if (href && href.includes(slug)) {
-                $(this).addClass('active');
-            }
-        });
+        // Initialize the destination page
+        const options = {
+            slug: '<?= htmlspecialchars($place) ?>'
+        };
+        const destinationPage = new DestinationPage(options);
 
-
-        $('#contact_form5').submit(function (e) {
-
-            e.preventDefault();
-
-            var form = $(this);
-            var formData = form.serialize();
-
-            $.ajax({
-                url: 'api/RequestCallBack',
-                type: 'POST',
-                data: formData,
-                dataType: 'json', // Expecting JSON response
-                success: function (response) {
-                    $('.messages').html('<div style="color:green;">' + response.message + '</div>');
-                    //form.trigger("reset");
-                },
-                error: function () {
-                    $('.messages').html('<div style="color:red;">An error occurred.</div>');
-                }
-            });
-
-            return false;
-        });
     });
 
 </script>
+
+
 </body>
 
 </html>

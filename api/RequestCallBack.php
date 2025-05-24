@@ -21,12 +21,13 @@ if (!empty($_POST['form_botcheck'])) {
 $name = htmlspecialchars(trim($_POST['form_name'] ?? ''));
 $phone = htmlspecialchars(trim($_POST['form_phone'] ?? ''));
 $email = filter_var(trim($_POST['form_email'] ?? ''), FILTER_VALIDATE_EMAIL);
+$subject = htmlspecialchars(trim($_POST['form_subject'] ?? ''));
 $message = htmlspecialchars(trim($_POST['form_message'] ?? ''));
 
 // Required fields
 if (empty($name) || empty($phone)) {
     echo json_encode([
-        'success' => true,
+        'success' => false,
         'message' => 'Name and phone are required.'
     ]);
     exit;
@@ -59,7 +60,7 @@ try {
     }
 
     $mail->isHTML(true);
-    $mail->Subject = 'New Contact Form Submission';
+    $mail->Subject = $subject; //'New Contact Form Submission';
     $mail->Body = $emailBody;
     $mail->AltBody = strip_tags($emailBody);
     $mail->addCustomHeader('X-Originating-IP', $_SERVER['REMOTE_ADDR']);
