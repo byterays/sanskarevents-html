@@ -35,9 +35,10 @@
 
 <body>
 	<div id="fb-root"></div>
-	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v22.0&appId=946257136654856"></script>
+	<script async defer crossorigin="anonymous"
+		src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v22.0&appId=946257136654856"></script>
 
-	
+
 	<div class="wrapper">
 		<div class="preloader">
 			<div class="preloader_container">
@@ -122,8 +123,10 @@
 														<h4 class="title">Jim Corbett</h4>
 														<div class="content">
 															<ul class="menu-col">
-																<li><a href="destination/jim-corbett"><img class="img-responsive img-whp"
-																			src="images/menu-images/jim-corbett.png" alt="jim-corbett"></a>
+																<li><a href="destination/jim-corbett"><img
+																			class="img-responsive img-whp"
+																			src="images/menu-images/jim-corbett.png"
+																			alt="jim-corbett"></a>
 																</li>
 															</ul>
 														</div>
@@ -132,8 +135,10 @@
 														<h4 class="title">Jaipur</h4>
 														<div class="content">
 															<ul class="menu-col">
-																<li><a href="destination/jaipur"><img class="img-responsive img-whp"
-																			src="images/menu-images/jaipur.png" alt="jaipur"></a>
+																<li><a href="destination/jaipur"><img
+																			class="img-responsive img-whp"
+																			src="images/menu-images/jaipur.png"
+																			alt="jaipur"></a>
 																</li>
 															</ul>
 														</div>
@@ -142,8 +147,10 @@
 														<h4 class="title">Rishikesh</h4>
 														<div class="content">
 															<ul class="menu-col">
-																<li><a href="destination/rishikesh"><img class="img-responsive img-whp"
-																			src="images/menu-images/rishikesh.png" alt="rishikesh"></a>
+																<li><a href="destination/rishikesh"><img
+																			class="img-responsive img-whp"
+																			src="images/menu-images/rishikesh.png"
+																			alt="rishikesh"></a>
 																</li>
 															</ul>
 														</div>
@@ -152,8 +159,10 @@
 														<h4 class="title">Himanchal Pradesh</h4>
 														<div class="content">
 															<ul class="menu-col">
-																<li><a href="destination/himanchal-pradesh"><img class="img-responsive img-whp"
-																			src="images/menu-images/himanchal.png" alt="himanchal"></a>
+																<li><a href="destination/himanchal-pradesh"><img
+																			class="img-responsive img-whp"
+																			src="images/menu-images/himanchal.png"
+																			alt="himanchal"></a>
 																</li>
 															</ul>
 														</div>
@@ -162,8 +171,10 @@
 														<h4 class="title">Bhimtal</h4>
 														<div class="content">
 															<ul class="menu-col">
-																<li><a href="destination/bhimtal"><img class="img-responsive img-whp"
-																			src="images/menu-images/bhimtal.png" alt="bhimtal"></a>
+																<li><a href="destination/bhimtal"><img
+																			class="img-responsive img-whp"
+																			src="images/menu-images/bhimtal.png"
+																			alt="bhimtal"></a>
 																</li>
 															</ul>
 														</div>
@@ -172,8 +183,10 @@
 														<h4 class="title">Manali</h4>
 														<div class="content">
 															<ul class="menu-col">
-																<li><a href="destination/manali"><img class="img-responsive img-whp"
-																			src="images/menu-images/manali.png" alt=manali"></a>
+																<li><a href="destination/manali"><img
+																			class="img-responsive img-whp"
+																			src="images/menu-images/manali.png"
+																			alt=manali"></a>
 																</li>
 															</ul>
 														</div>
@@ -183,12 +196,12 @@
 										</ul>
 									</li>
 									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery</a>
+										<a class="dropdown-toggle" data-toggle="dropdown">Gallery</a>
 										<ul class="dropdown-menu">
-											<li><a href="#">Gallery1</a></li>
-											<li><a href="#">Gallery2</a></li>
-											<li><a href="#">Gallery3</a></li>											
+											<li><a href="photo-gallery">Photo</a></li>
+											<li><a href="video-gallery">Video</a></li>
 										</ul>
+									</li>
 									<li>
 										<a href="contact">Contact</a>
 									</li>
