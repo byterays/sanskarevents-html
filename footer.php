@@ -99,7 +99,7 @@
                                     <input type="text" name="form_botcheck" id="form_botcheck" style="display: none;">
                                     <button type="submit" id="contact_form5_submit"
                                         class="btn btn-default btn-block ulockd-btn-thm2"
-                                        data-loading-text="Getting Few Sec...">SUBMIT</button>
+                                        data-loading-text="Please wait...">SUBMIT</button>
                                 </div>
                             </div>
                         </div>
@@ -155,7 +155,12 @@
         // Initialize the contact form handler
         new ContactFormHandler({
             form: '#contact_form5',
-            subject: `Query by ${$("#form_name").val()}: Quick Contact Form`,
+            subject: 'Quick form Quick Contact Form',
+            url: 'api/RequestCallBack'
+        });
+        new ContactFormHandler({
+            form: '#contact_form',
+            subject: 'Query from Contact page',
             url: 'api/RequestCallBack'
         });
 
@@ -165,8 +170,13 @@
         };
         const destinationPage = new DestinationPage(options);
 
-    });
+        new ContactFormHandler({
+            form: '#rsvp_form',
+            subject: 'Query for  Event Destination: ' + options.slug,
+            url: 'api/RequestCallBack'
+        });
 
+    });
 </script>
 
 

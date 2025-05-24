@@ -37,18 +37,20 @@
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <input id="form_email" name="form_email" class="form-control ulockd-form-fg required email" placeholder="Your email" required="required" data-error="Email is required." type="email">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
+                               
 	                            <div class="col-md-4">
 	                                <div class="form-group">
 	                                    <input id="form_phone" name="form_phone" class="form-control ulockd-form-fg required" placeholder="Phone" required="required" data-error="Phone Number is required." type="text">
 	                                    <div class="help-block with-errors"></div>
 	                                </div>
 	                            </div>
+
+								 <div class="col-md-4">
+                                    <div class="form-group">
+                                        <input id="form_email" name="form_email" class="form-control ulockd-form-fg required email" placeholder="Your email" required="required" data-error="Email is required." type="email">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
 	                          
                                 <div class="col-md-12">
 		                            <div class="form-group">
