@@ -155,7 +155,7 @@
         // Initialize the contact form handler
         new ContactFormHandler({
             form: '#contact_form5',
-            subject: 'Query from Quick Contact Form',
+            subject: `Query by ${$("#form_name").val()}: Quick Contact Form`,
             url: 'api/RequestCallBack'
         });
 
