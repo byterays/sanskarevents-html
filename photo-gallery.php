@@ -1,42 +1,6 @@
 <?php include 'header.php'; ?>
 
-<?php
 
-function listFilesWithDetails($directory)
-{
-	$result = [];
-
-	// Normalize base path
-	$basePath = rtrim($directory, DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR;
-
-	$iterator = new RecursiveIteratorIterator(
-		new RecursiveDirectoryIterator($directory, RecursiveDirectoryIterator::SKIP_DOTS)
-	);
-
-	foreach ($iterator as $fileInfo) {
-		if ($fileInfo->isFile()) {
-			$fullPath = $fileInfo->getPathname();
-			$relativePath = str_replace($basePath, '', $fullPath);
-			$fileName = $fileInfo->getFilename();
-			$category = dirname($relativePath);
-
-			$result[] = [
-				'file_path' => str_replace('\\', '/', $relativePath), // Normalize for Windows
-				'file_name' => $fileName,
-				'category' => str_replace('\\', '/', $category)
-			];
-		}
-	}
-
-	return $result;
-}
-
-// Example usage
-$folder = './gallery/'; // replace with your actual folder
-$files = listFilesWithDetails($folder);
-
-
-?>
 <!-- Wrapper Start -->
 <!-- Our Gallery -->
 <section class="ulockd-service-three">
@@ -66,13 +30,13 @@ $files = listFilesWithDetails($folder);
 
 
 				<!-- Masonry Grid -->
-				<div id="grid" class="masonry-gallery grid-6 mrgn10 clearfix">
+				<div id="photo-gallery" class="masonry-gallery grid-6 mrgn10 clearfix">
 
 					<?php
 					foreach($files as $photo):
 						?>
 						<!-- Masonry Item -->
-						<div class="isotope-item creative corporate">
+						<div class="isotope-item">
 							<div class="gallery-thumb">
 								<img class="img-responsive img-whp" src="/gallery/<?= $photo['file_path'] ?>" alt="<?= $photo['file_name'] ?>">
 								<div class="overlayer">

@@ -150,6 +150,7 @@
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/destinations-loader.js"></script>
 <script type="text/javascript" src="js/contact-form-handler.js"></script>
+<script type="text/javascript" src="js/photo-gallery.js"></script>
 <script type="text/javascript">
     $(function () {
         // Initialize the contact form handler
@@ -174,6 +175,11 @@
             form: '#rsvp_form',
             subject: 'Query for  Event Destination: ' + options.slug,
             url: 'api/RequestCallBack'
+        });
+
+        new PhotoGalleryLoader({
+            apiUrl: 'api/PhotoGallery',
+            container: '#photo-gallery'
         });
 
     });
