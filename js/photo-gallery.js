@@ -55,5 +55,12 @@ class PhotoGalleryLoader {
         `).join('');
 
         this.container.html(html);
+
+         $(".popup-img").magnificPopup({
+            type: "image",
+            gallery: {
+                enabled: true
+            }
+        });
     }
 }
