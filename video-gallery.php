@@ -1,7 +1,8 @@
 <?php include 'header.php'; ?>
 
 <?php 
-$videos = ['Q9lDN-SeNt', 'k3RGyGTlzOs', 'udEH-nEhCdU', 'sKIiZOMV6PA'];
+$videos = ['Q9lDN-SeNt', 'k3RGyGTlzOs', 'udEH-nEhCdU', 'sKIiZOMV6PA','sUqi5RzibDA','sUqi5RzibDA'];
+
 ?>
 <!-- Wrapper Start -->
 <!-- Our Gallery -->
