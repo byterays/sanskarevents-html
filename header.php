@@ -32,14 +32,18 @@
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+	
 	<style>
 		.video-gallery .isotope-item {
-			padding: 5px!important;
+			padding: 5px !important;
 		}
+
 	</style>
 </head>
 
 <body>
+
 	<div id="fb-root"></div>
 	<script async defer crossorigin="anonymous"
 		src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v22.0&appId=946257136654856"></script>
@@ -69,7 +73,7 @@
 					<div class="col-md-3">
 						<div class="welcm-ht text-right">
 							<ul class="list-inline">
-								<li><a class="color-white" href="#"><i class="fa fa-facebook-official"></i></a></li>
+								<li><a class="color-white" href="https://www.facebook.com/sankareventsandcelebrations"><i class="fa fa-facebook-official"></i></a></li>
 								<!-- <li><a class="color-white" href="#"><i class="fa fa-rss"></i></a></li>
 							  <li><a class="color-white" href="#"><i class="fa fa-google-plus"></i></a></li>
 							  <li><a class="color-white" href="#"><i class="fa fa-pinterest"></i></a></li> -->
