@@ -33,14 +33,15 @@ if (empty($name) || empty($phone)) {
     exit;
 }
 
+
+
 // Prepare email body
 $emailBody = "
   <h2>New Contact Request</h2>
   <p><strong>Name:</strong> $name</p>
   <p><strong>Phone:</strong> $phone</p>
   <p><strong>Email:</strong> " . ($email ?: 'Not provided') . "</p>
-  <p><strong>Message:</strong><br>$message</p>
-";
+  <p><strong>Message:</strong><br>$message</p>";
 
 // Send to Admin
 
@@ -68,18 +69,50 @@ $emailBody = "
     try {
         $mail->send();
     } catch (Exception $e) {
+        // Log error or handle it as needed
+
         echo json_encode([
             'success' => false,
             'message' => $mail->ErrorInfo
         ]);
         exit;
     }
+  
+    
+    // Confirmation email to user
+    if ($email) {
+        $confirm = new PHPMailer(true);
+        $confirm->isSMTP();
+        $confirm->Host = $config['smtp_host'];
+        $confirm->SMTPAuth = true;
+        $confirm->Username = $config['smtp_user'];
+        $confirm->Password = $config['smtp_pass'];
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        $confirm->Port = $config['smtp_port'];
 
-    echo json_encode([
+        $confirm->setFrom($config['from_email'], $config['from_name']);
+        $confirm->addAddress($email, $name);
+        //$confirm->addReplyTo($config['from_email'], $config['from_name']);
+
+        $confirm->isHTML(true);
+        $confirm->Subject = 'Thank you for contacting us';
+        $confirm->Body = "
+            <p>Hi $name,</p>
+            <p>Thank you for reaching out. We received your message and will get back to you shortly.</p>
+            <p><strong>Your Message:</strong><br>" . nl2br($message) . "</p>
+            <p>Best regards,<br>Sanskar Events and Celebrations</p>";
+        $confirm->AltBody = strip_tags($message);
+
+        try {
+            $confirm->send();
+        } catch (Exception $e) {
+           //do nothing
+        }
+    }
+
+     echo json_encode([
         'success' => true,
         'message' => 'Message sent successfully.'
     ]);
-    
-
     exit;
 ?>
