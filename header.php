@@ -39,6 +39,10 @@
 			padding: 5px !important;
 		}
 
+		#other-buttons a {
+			padding: 5px 10px !important;
+		}
+
 	</style>
 </head>
 
