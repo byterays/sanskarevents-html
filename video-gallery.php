@@ -1,11 +1,9 @@
 <?php include 'header.php'; ?>
 
 <?php
-	$videos = ['Q9lDN-SeNt', 'k3RGyGTlzOs', 'udEH-nEhCdU', 'sKIiZOMV6PA', 'sUqi5RzibDA', 'sUqi5RzibDA'];
+	$videos = ['Q9lDN-SeNt', 'k3RGyGTlzOs', 'udEH-nEhCdU', 'sKIiZOMV6PA', 'sUqi5RzibDA', 'T007BPsJw00'];
 ?>
 <!-- Wrapper Start -->
-<!-- Our Gallery -->
-<section class="ulockd-service-three">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 text-center">
