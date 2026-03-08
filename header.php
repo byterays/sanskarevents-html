@@ -38,7 +38,7 @@
 		}
 
 		#other-buttons a {
-			padding: 5px 10px !important;
+			padding: 5px 14px !important;
 		}
 
 	</style>

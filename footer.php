@@ -137,10 +137,10 @@
 
 <div id="other-buttons" style="position: fixed; top: 50%; left: 0; display: flex; flex-direction: column; gap: 10px; padding-left: 5px;">
   <a href="https://www.facebook.com/sankareventsandcelebrations" target="_blank" style="background:#1877F2; color:white; padding:10px; border-radius:50%; text-align:center; font-size:20px;">
-    <i class="fab fa-facebook-f"></i>
+    <i class="fa fa-facebook"></i>
   </a>
   <a href="tel:+919220228691" style="background:#34b7f1; color:white; padding:10px; border-radius:50%; text-align:center; font-size:20px; margin-top:10px;">
-    <i class="fas fa-phone-alt"></i>
+    <i class="fa fa-phone"></i>
   </a>
 </div>
 
