@@ -42,3 +42,7 @@ p {
     font-size: 20px;   
     font-weight: 400;
 }
+
+.welcm-ht  i.fa::before {
+    font-size: 30px!important;
+} 

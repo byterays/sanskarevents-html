@@ -31,16 +31,20 @@
             <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-3">
                 <div class="footer-contact">
                     <h3 class="text-uppercase text-thm2">Contact Us</h3>
-                    <p>
-                        Greater Noida West, Sector 4<br />
-                        Near Gaur City Center
-                    </p>
-                    <div class="ftr-phone"><span>Phone </span>: <a href="#"> +91 (9220) 228 691</a></div>
+                   
+                    <div class="ftr-phone"><span>Phone </span>: <a href="#"> +91 (9220) 228 691, <br/>+91 (9220) 228 692, <br/> +91 (9220) 228 693, <br/> +91 (9220) 228 694,<br/></a></div>
 
                     <div class="ftr-mail"><span>Email </span>: <a href=mailto:info@sanskarevents.in#">
                             info@sanskarevents.in</a></div>
                     <div class="ftr-mail"><span>Website </span>: <a href="#"> https://sanskarevents.in/</a>
                     </div>
+                    
+                     <p>
+                        Gaur City Mall, Floor# 11<br />
+                        Office# 26, Gaur City 1, <br/>
+                        Sector 4, Greater Noida, <br/>
+                        Greater Noida West
+                    </p>
 
                     <ul class="social_icons icon_md ulockd-mrgn1225">
                         <li class="bgc-fb"><a href="#" class="fa fa-facebook color-white"></a></li>

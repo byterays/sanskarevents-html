@@ -18,8 +18,11 @@
 						<div class="contact-details">
 							<ul class="contact-place">
 								<li><span class="flaticon-black-back-closed-envelope-shape" title="info@sanskarevents.in"> <small>info@sanskarevents.in</small></span></li>
-								<li><span class="flaticon-old-handphone" title="+91 (9220) 228 691"> <small> +91 (9220) 228 691 </small></span></li>
-								<li><span class="flaticon-map-marker" title="Greater Noida West, Sector 4"> <small>Greater Noida West, Sector 4</small></span></li>
+								<li><span class="flaticon-old-handphone" title="+91 (9220) 228 691"> <small> +91 (9220) 228 691, +91 (9220) 228 692, +91 (9220) 228 693, +91 (9220) 228 694 </small></span></li>
+								<li><span class="flaticon-map-marker" title="Greater Noida West, Sector 1"> <small> Gaur City Mall, Floor# 11<br />
+                        Office# 26, Gaur City 1, <br/>
+                        Sector 4, Greater Noida, <br/>
+                        Greater Noida West</small></span></li>
 								
 							</ul>
 						</div>
