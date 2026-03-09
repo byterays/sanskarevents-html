@@ -49,7 +49,7 @@
                     <ul class="social_icons icon_md ulockd-mrgn1225">
                         <li class="bgc-fb"><a href="#" class="fa fa-facebook color-white"></a></li>
                         <!-- <li class="bgc-lnkdn"><a href="#" class="fa fa-linkedin color-white"></a></li> -->
-                        <li class="bgc-inst"><a href="#" class="fa fa-instagram color-white"></a></li>
+                        <li class="bgc-inst"><a href="https://www.instagram.com/sanskareventsandcelebrations" class="fa fa-instagram color-white"></a></li>
                         <!-- <li class="bgc-twtr"><a href="#" class="fa fa-twitter color-white"></a></li> -->
                         <!-- <li class="bgc-pint"><a href="#" class="fa fa-pinterest color-white"></a></li> -->
                     </ul>

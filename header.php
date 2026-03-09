@@ -79,7 +79,7 @@
 								<!-- <li><a class="color-white" href="#"><i class="fa fa-rss"></i></a></li>
 							  <li><a class="color-white" href="#"><i class="fa fa-google-plus"></i></a></li>
 							  <li><a class="color-white" href="#"><i class="fa fa-pinterest"></i></a></li> -->
-								<li><a class="color-white" href="#"><i class="fa fa-instagram"></i></a></li>
+								<li><a class="color-white" href="https://www.instagram.com/sanskareventsandcelebrations"><i class="fa fa-instagram"></i></a></li>
 							</ul>
 						</div>
 					</div>
